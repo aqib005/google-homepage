@@ -1,326 +1,61 @@
-<DOCTYPE html>
-element.style{
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 10px;
-  font-style: normal;
-  color: #222;
-  font-family: Arial, sans-serif;
-}
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 100vw;
-  min-height: 100vh;
-  /* margin: 0;
-  padding: 0; */
-}
+<html lang="en">
 
-body {
-  flex-direction: column;
-}
-
-a {
-  text-decoration: none;
-  margin: 0 0.7rem;
-  cursor: pointer;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-header {
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 1rem 1rem;
-  font-size: 0.9rem;
-}
-
-header a {
-  color: black;
-}
-
-header img {
-  border-radius: 50%;
-  width: 32px;
-}
-
-header.bell {
-    height: 24px;
-    vertical-align: middle;
-    position: static;
-}
-div{
-display:block;}
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-section.search-wrapper {
-    width: 600px;
-    margin: 0 auto;
-    left: 0px;
-    height: 47px;
-    display: block;
-    position: relative;
-}
-
-form {
-    display: block;
-    margin-top: 0em;
-}
-.search {
-    width: 598px;
-    border: 1px solid #d9d9d9;
-    font-size: 17px;
-    border-radius: 55px;
-    height: 44px;
-    position: static;
-    vertical-align: middle;
-}
-
-#search-box {
-  width: 550px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  border-radius: 50px;
-  padding: 10px;
-  margin-top: 25px;
-  align-items: center;
-  border: 1px solid #dfe1e5;
-}
-.search input {
-    width: 510px;
-    border: none;
-    margin-top: 2px;
-    font-size: 17px;
-    height: 38px;
-}
-input[type="text" i] {
-    padding: 1px 2px;
-}
-input {
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: -internal-light-dark-color(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    -webkit-appearance: textfield;
-    background-color: -internal-light-dark-color(rgb(255, 255, 255), rgb(59, 59, 59));
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 2px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
-    border-image: initial;
-}
-.right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-right: 22px;
-    width: 14.5px;
-    height: 20.5px;
-    padding-top: 12px;
-}
-.left {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 22px;
-}
-button {
-    -webkit-appearance: button;
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: -internal-light-dark-color(buttontext, rgb(170, 170, 170));
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    background-color: -internal-light-dark-color(rgb(239, 239, 239), rgb(74, 74, 74));
-    box-sizing: border-box;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
-    border-image: initial;
-}
-.button button {
-    background-color: #f5f5f5;
-    border-style: none;
-    border-radius: 5px;
-    color: #666;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 0px;
-    margin: 25px 4px;
-    padding: 0 19px;
-    display: inline-block;
-    cursor: pointer;
-    height: 36px;
-    min-width: 54px;
-}
-button:hover {
-  cursor: pointer;
-  color: black;
-  border: solid 1px rgb(200, 200, 200);
-  background-image: -moz-linear-gradient(
-    top,
-    rgb(250, 250, 250),
-    rgb(240, 240, 240)
-  );
-}
-
-#change-lang {
-  font-size: 0.9rem;
-  color: rgb(34, 34, 34);
-  line-height: 28px;
-  display: inline-block;
-}
-
-#change-lang a {
-  padding: 0 3px;
-  margin: 0;
-  color: #1a0dab;
-  text-decoration: none;
-}
-
-#change-lang a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  line-height: 3rem;
-  width: 100%;
-  border-top: 1px solid #e4e4e4;
-  background: #f2f2f2;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-hr {
-  border: 1px solid #e4e4e4;
-}
-
-#location {
-  margin-left: 3rem;
-  display: flex;
-  justify-content: flex-start;
-  color: rgba(0, 0, 0, 0.54);
-}
-
-#links {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 3rem;
-}
-
-#links a {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 1rem;
-}
-
-#links a:first-child {
-  margin-left: 0;
-}
-
-#links a:last-child {
-  margin-right: 0;
-}
-
-#link-left {
-  text-align: left;
-}
-#link-right {
-  justify-content: flex-end;
-  text-align: right;
-}
-
-<html>
-<head>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/ecf4bae2cb.js"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
-    <title>Google</title>
-  </head>
-<body>
-    <header>
-      <a href="#">Gmail</a>
-      <a href="#">Images</a>
-      <img class="bell" src="https://yoktolab.com/files/pictures/navdrawer/apps_sec_icon.png">
-      <a href="#"><button>Sign In</button></a>
-    </header>
-
-    <section>
-      <div class="logo">
-			<img src="https://www.edigitalagency.com.au/wp-content/uploads/small-google-logo-png-transparent-background-600x200.png">
-		</div>
-      <div class="search-wraper">
-		<form action="https://google.com/search" method="GET">
-		  	<div class="search">
-				<input type="text" autocomplete="off" placeholder="" name="q">
-            				<div><img src="https://i.ya-webdesign.com/images/_color_272x92dp-png-no-repeat-background-size-272px-92px-height-92px-width-272px-5.png" class="right">
-              				     <img src="https://banner2.cleanpng.com/20180516/eve/kisspng-computer-icons-symbol-web-search-engine-clip-art-5afbf2fdae3969.1826091715264611817136.jpg" class="left">
-          				</div>
-    			</form></div>
- 	<div class="button">
-		<button type="submit">Google Search</button>
-		<button type="submit">I'm Feeling Lucky </button>
-	</div>
-      <div id="change-lang">
-        Google offered in: <a href="#">اُردُو</a> 
-         <a href="#">پښتو</a> 
-        <a href="#">سنڌي</a> 
-      </div>
-    </section>
-
-    <footer>
-      <div id="location">Pakistan</div>
-      <hr>
-      <div id="links">
-        <div id="link-left">
-          <a href="#">Advertising</a>
-          <a href="#">Buisness</a>
-          <a href="#">About</a>
-          <a href="#">How Search works</a>
-        </div>
-        <div id="link-right">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Settings</a>
-        </div>
-      </div>
-    </footer>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    
+    <body>
+        <header class="ggl-header">
+            <nav class="ggl-nav">
+                <div class="ggl-nav-item">Gmail</div>
+                <div class="ggl-nav-item">Images</div>
+    
+                <div class="ggl-nav-item">
+                    <button id="ggl-signin-btn">Sign in</button>
+                </div>
+    
+            </nav>
+    
+        </header>
+        <main class="ggl-main">
+            <div class="ggl-main-container">
+                <div class="ggl-logo"><img id="ggl-logo-image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" srcset="">
+                </div>
+                <div class="ggl-input">
+                    <div class="input-svg input-before">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z" />
+                        </svg>
+                    </div>
+                    <input type="text" />
+                </div>
+    
+                <div class="ggl-search-button"><button>Google Search</button></div>
+                <div class="ggl-lucky-button"><button>I'm Feeling Lucky</button></div>
+                <div class="ggl-language">Google offered in: <a href="#"> اُردُو</a><a href="#"> سنڌي</a><a href="#"> پښتو</a></div>
+            </div>
+    
+        </main>
+        <footer class="ggl-footer">
+            <div class="ggl-footer-country">Pakistan</div>
+            <div class="ggl-footer-links-left">
+                <div class="ggl-footer-link-item">Advertising</div>
+                <div class="ggl-footer-link-item">Business</div>
+                <div class="ggl-footer-link-item">About</div>
+                <div class="ggl-footer-link-item">How Search Works</div>
+            </div>
+    
+            <div class="ggl-footer-links-right">
+                <div class="ggl-footer-link-item">Privacy</div>
+                <div class="ggl-footer-link-item">Terms</div>
+                <div class="ggl-footer-link-item">Settings</div>
+            </div>
+        </footer>
+    </body>
+    
+    </html>
